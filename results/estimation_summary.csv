@@ -1,0 +1,2 @@
+TrueSpeed_mps,EstimatedSpeed_mps,SpeedError_mps,TrueDistance_m,EstimatedDistance_m,DistanceError_m,TrueClosestEmissionTime_s,EstimatedClosestEmissionTime_s,ClosestEmissionTimeError_s,FrequencyRMSE_Hz,FrequencyBias_Hz,FitRMSE_Hz
+10,10.0004089354627,0.000408935462715476,5,5.00628081626583,0.0062808162658321,5,4.9999886996307,1.13003692963076e-05,0.0147470458034521,-0.00012711688382006,0.00594799159436338

@@ -73,16 +73,17 @@ power to define SNR; local SNR varies with inverse-distance amplitude.
 
 ## Current status and limitations
 
-The preliminary implementation has been written. MATLAB execution has not yet
-been verified in the authoring environment. Do not report numerical MATLAB
-results until the script has actually been run and inspected. No measured
-recording or multi-harmonic comparison is included. Basic peak tracking has no
+The student has run the noiseless single-tone MATLAB baseline and supplied the
+three figures and estimation summary, now available in `results/`. Estimated
+speed is 10.000408935 m/s and distance is 5.006280816 m, against true values
+10 m/s and 5 m. Frequency tracking RMSE is 0.014747046 Hz. These results cover
+one ideal simulation. No measured recording or multi-harmonic comparison is included. Basic peak tracking has no
 outlier rejection and may fail at low SNR. Short observations may poorly
 constrain closest distance; a low fitting residual is not proof of identifiability.
 
 ## Next experiments
 
-1. Run and validate the noiseless baseline against the known parameters.
+1. Repeat the baseline across additional source speeds and closest distances.
 2. Compare window lengths 2,048, 4,096 and 8,192 samples.
 3. Test SNR values 20, 10, 5 and 0 dB over several random seeds.
 4. Add multi-harmonic tracking and compare estimation errors with this baseline.

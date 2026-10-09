@@ -22,16 +22,45 @@ This project has been revised following the initial teaching staff feedback. The
 
 A preliminary single-tone MATLAB implementation has been added in [run_doppler_demo.m](run_doppler_demo.m). It includes retarded-time Doppler simulation, STFT analysis, interpolated frequency-ridge extraction and nonlinear fitting of speed, closest distance and closest-approach emission time.
 
-See [README_PRELIMINARY.md](README_PRELIMINARY.md) for the model, parameters, limitations and run instructions. The implementation is AI-assisted and requires student review. MATLAB execution and numerical results remain pending.
+See [README_PRELIMINARY.md](README_PRELIMINARY.md) for the model, parameters, limitations and run instructions. The implementation is AI-assisted and requires student review. The noiseless MATLAB baseline has now been run; its output figures and CSV summary are included below.
 
 
 ## Preliminary Results
-MATLAB simulation results, spectrograms and frequency estimation plots will be added after validation.
+The single-tone noiseless MATLAB baseline has been run. The figures and numerical summary below are the student-provided outputs from that run (9 October 2026).
+
+| Metric | Result |
+|---|---:|
+| True speed | 10 m/s |
+| Estimated speed | 10.000408935 m/s |
+| Absolute speed error | 0.000408935 m/s |
+| True closest distance | 5 m |
+| Estimated closest distance | 5.006280816 m |
+| Absolute distance error | 0.006280816 m |
+| Estimated closest-approach emission time | 4.999988700 s |
+| Frequency tracking RMSE | 0.014747046 Hz |
+| Frequency tracking bias | -0.000127117 Hz |
+| Extracted-versus-fitted track RMSE | 0.005947992 Hz |
+
+These results are one controlled simulation using the same physical model for synthesis and estimation. They do not yet demonstrate noise robustness, multi-harmonic improvement or real-world performance.
+
+**Figure 1: received waveform**
+
+![Simulated received waveform](results/figure1_waveform.png)
+
+**Figure 2: STFT and extracted ridge**
+
+![STFT spectrogram](results/figure2_spectrogram.png)
+
+**Figure 3: theoretical, extracted and fitted trajectories**
+
+![Frequency fit](results/figure3_frequency_fit.png)
+
+[Download the numerical summary](results/estimation_summary.csv) · [Read the Feedback 2 report](ELEC5305_Project_Feedback_2_Qirui_Xie.pdf)
 
 
 ## Future Work
-- Run and validate the preliminary simulation, frequency tracker and motion estimator in MATLAB.
-- Upload the generated spectrogram, frequency-fit figures and estimation-summary CSV.
+- Repeat the baseline over additional speeds and closest distances.
+- Validate against a controlled recording with independently measured speed.
 - Evaluate performance under different SNR levels.
 - Compare STFT window lengths and multi-harmonic methods.
 
