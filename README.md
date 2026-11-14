@@ -77,3 +77,6 @@ ELEC5305 — Acoustics, Speech and Signal Processing
 ## Running the Preliminary Code
 
 Download `run_doppler_demo.m`, open it in MATLAB R2024a and press Run. The script creates a `results` folder containing three figures, a WAV signal, CSV results and a MAT workspace. The baseline uses a 3,000 Hz tone, 10 m/s source speed and 5 m closest distance. These are simulation settings, not measured results.
+
+
+[Watch the project demonstration](https://drive.google.com/file/d/1GYqKhLjZ_48jbnXYytBexktqN6X0FGxq/view?usp=sharing)
