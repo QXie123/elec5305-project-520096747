@@ -23,7 +23,8 @@ The three comparators are fundamental-only tracking, fixed weighted harmonic fus
 
 ## Demonstration
 
-See [recording notes](DEMO_SCRIPT.md). Add the actual video link here
-after uploading the recording, and replace the report's demonstration
-section link with the direct video link if the submission requires it.
+See [recording notes](DEMO_SCRIPT.md). 
 
+
+
+[Watch the project demonstration](https://drive.google.com/file/d/1GYqKhLjZ_48jbnXYytBexktqN6X0FGxq/view?usp=sharing)
